@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "dep- inclusions" ]
+    branches: [ "dep-inclusions" ]
   pull-request:
     branches: ["master"]
  
@@ -38,7 +38,7 @@ jobs:
       # Install project dependencies
       - name: Install dependencies
         run: npm install
-        
+
       # Deploy To Heroku
   deploy:
     runs-on: ubuntu-latest
